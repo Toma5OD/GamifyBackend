@@ -1,4 +1,9 @@
+require('dotenv').config();
+
 const { Pool } = require('pg');
+
+// Log out the DB_PASSWORD to check if it's being read correctly
+// console.log("Database password:", process.env.DB_PASSWORD);
 
 const pool = new Pool({
   user: process.env.DB_USER,
